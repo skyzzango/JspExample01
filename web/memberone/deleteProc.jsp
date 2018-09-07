@@ -1,4 +1,4 @@
-<%--
+<%@ page import="memberone.MemberDao" %><%--
   Created by IntelliJ IDEA.
   User: skyzz
   Date: 2018-09-06
@@ -7,12 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%@include file="../partials/loginCheck.jsp" %>
-<jsp:useBean id="dao" class="memberone.MemberDao"/>
 <html lang="ko">
 <head>
 	<%@include file="../partials/head.jsp" %>
 	<title>회원 탈퇴</title>
 	<%
+		MemberDao dao = MemberDao.getInstance();
 		String id = (String) session.getAttribute("loginId");
 		String password = request.getParameter("password");
 		int check = dao.deleteMember(id, password);

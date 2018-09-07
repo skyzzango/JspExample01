@@ -1,4 +1,4 @@
-<%--
+<%@ page import="memberone.MemberDao" %><%--
   Created by IntelliJ IDEA.
   User: skyzz
   Date: 2018-09-04
@@ -6,7 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<jsp:useBean id="dao" class="memberone.MemberDao"/>
 <jsp:useBean id="dto" class="memberone.MemberDto"/>
 <jsp:setProperty name="dto" property="*"/>
 <html lang="ko">
@@ -15,6 +14,7 @@
 	<title>회원 가입 확인</title>
 	<%
 		request.setCharacterEncoding("UTF-8");
+		MemberDao dao = MemberDao.getInstance();
 		boolean flag = dao.memberInsert(dto);
 	%>
 </head>

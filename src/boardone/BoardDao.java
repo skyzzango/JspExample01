@@ -1,9 +1,8 @@
 package boardone;
 
-import boardone.BoardDto;
-
 import java.sql.*;
-import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BoardDao {
 	private static BoardDao instance = null;
@@ -14,16 +13,23 @@ public class BoardDao {
 	public static BoardDao getInstance() {
 		if (instance == null) {
 			synchronized (BoardDao.class) {
-				instance = new BoardDao();
+				if (instance == null) {
+					instance = new BoardDao();
+				}
 			}
 		}
 		return instance;
 	}
 
-	private PreparedStatement setPreparedStatement(Connection conn, String sql, String state) throws Exception {
-		PreparedStatement stmt = conn.prepareStatement(sql);
-		stmt.setString(1, state);
-		return stmt;
+
+	private PreparedStatement setPreparedStatement(Connection conn, String sql, Object status) throws SQLException {
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		if (status instanceof String) {
+			pstmt.setString(1, (String) status);
+		} else {
+			pstmt.setInt(1, (int) status);
+		}
+		return pstmt;
 	}
 
 	public void insertArticle(BoardDto article) {
@@ -31,7 +37,7 @@ public class BoardDao {
 		int ref = article.getRef();
 		int step = article.getStep();
 		int depth = article.getDepth();
-		int number = 0;
+		int number;
 
 		String sql = "select max(num) from board";
 
@@ -51,7 +57,7 @@ public class BoardDao {
 				try (PreparedStatement pstmt1 = conn.prepareStatement(sql)) {
 					pstmt1.setInt(1, ref);
 					pstmt1.setInt(2, step);
-					pstmt1.executeQuery();
+					pstmt1.executeUpdate();
 					step++;
 					depth++;
 				}
@@ -73,16 +79,172 @@ public class BoardDao {
 				pstmt2.setInt(6, ref);
 				pstmt2.setInt(7, step);
 				pstmt2.setInt(8, depth);
-				pstmt2.setString(9, article.getContente());
+				pstmt2.setString(9, article.getContent());
 				pstmt2.setString(10, article.getIp());
-				pstmt2.executeQuery();
+				pstmt2.executeUpdate();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+	public int getArticleCount() {
+		int x = 0;
+		String sql = "select count(*) from board";
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = conn.prepareStatement(sql);
+				ResultSet rs = pstmt.executeQuery()
+		) {
+			if (rs.next()) {
+				x = rs.getInt(1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return x;
+	}
 
+	public List<BoardDto> getArticles() {
+		List<BoardDto> articleList = null;
+		String sql = "select * from board order by num desc";
+
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = conn.prepareStatement(sql);
+				ResultSet rs = pstmt.executeQuery()
+		) {
+			if (rs.next()) {
+				articleList = new ArrayList<>();
+				do {
+					BoardDto article = createArticle(rs);
+					articleList.add(article);
+				} while (rs.next());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return articleList;
+	}
+
+	public BoardDto getArticle(int num) {
+		BoardDto article = null;
+		String sql = "update board set readcount = readcount + 1 where num = ?";
+		String sql1 = "select * from board where num = ?";
+
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = setPreparedStatement(conn, sql, num);
+				PreparedStatement pstmt1 = setPreparedStatement(conn, sql1, num);
+				ResultSet rs = pstmt1.executeQuery()
+		) {
+			pstmt.executeUpdate();
+
+			if (rs.next()) {
+				article = createArticle(rs);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return article;
+	}
+
+	public BoardDto updateGetArticle(int num) {
+		BoardDto article = null;
+		String sql = "select * from board where num = ?";
+
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = setPreparedStatement(conn, sql, num);
+				ResultSet rs = pstmt.executeQuery()
+		) {
+			if (rs.next()) {
+				article = createArticle(rs);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return article;
+	}
+
+	public int updateArticle(BoardDto article) {
+		int result = -1;
+		String sql = "select password from board where num = ?";
+		String sql1 = "update board set writer = ?, email = ?, subject = ?, content = ? where num = ?";
+
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = setPreparedStatement(conn, sql, article.getNum());
+				ResultSet rs = pstmt.executeQuery()
+		) {
+			if (rs.next()) {
+				String dbPass = rs.getString("password");
+				if (dbPass.equals(article.getPassword())) {
+					try(PreparedStatement pstmt1 = conn.prepareStatement(sql1)) {
+						pstmt1.setString(1, article.getWriter());
+						pstmt1.setString(2, article.getEmail());
+						pstmt1.setString(3, article.getSubject());
+						pstmt1.setString(4, article.getContent());
+						pstmt1.setInt(5, article.getNum());
+						pstmt1.executeUpdate();
+						result = 1;
+					}
+				} else {
+					result = 0;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public int deleteArticle(int num, String pass) {
+		int result = -1;
+		String sql = "select password from board where num = ?";
+		String sql1 = "delete from board where num = ?";
+
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = setPreparedStatement(conn, sql, num);
+				ResultSet rs = pstmt.executeQuery()
+		) {
+			if (rs.next()) {
+				String dbPass = rs.getString("password");
+				if (dbPass.equals(pass)) {
+					try (PreparedStatement pstmt1 = conn.prepareStatement(sql1)) {
+						pstmt1.setInt(1, num);
+						pstmt1.executeUpdate();
+						result = 1;
+					}
+				} else {
+					result = 0;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	private BoardDto createArticle(ResultSet rs) throws SQLException {
+		BoardDto article = new BoardDto();
+
+		article.setNum(rs.getInt("num"));
+		article.setWriter(rs.getString("writer"));
+		article.setEmail(rs.getString("email"));
+		article.setSubject(rs.getString("subject"));
+		article.setPassword(rs.getString("password"));
+		article.setRegdate(rs.getTimestamp("regdate"));
+		article.setReadcount(rs.getInt("readcount"));
+		article.setRef(rs.getInt("ref"));
+		article.setStep(rs.getInt("step"));
+		article.setDepth(rs.getInt("depth"));
+		article.setContent(rs.getString("content"));
+		article.setIp(rs.getString("ip"));
+
+		return article;
+	}
 
 
 	public boolean idCheck(String id) {

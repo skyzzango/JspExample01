@@ -14,8 +14,8 @@ import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
 
 class ConnUtil {
 	static Connection getConnection() throws Exception {
-//		DataSource dataSource = (DataSource) new InitialContext()
-//				.lookup("java:comp/env/jdbc/mySql");
+		DataSource dataSource = (DataSource) new InitialContext()
+				.lookup("java:comp/env/jdbc/mySql");
 
 //		Context initContext = new InitialContext();
 //		Context envContext = (Context) initContext.lookup("java:comp/env");
@@ -23,21 +23,7 @@ class ConnUtil {
 //
 //		DataSource dataSource2 = getDataSource();
 
-
-		BasicDataSource retVal = new BasicDataSource();
-		try
-		{
-			retVal.setDriver(new com.mysql.jdbc.Driver());
-		}
-		catch (Exception exc)
-		{
-			exc.printStackTrace();
-		}
-		retVal.setUrl("jdbc:mysql://localhost:3306/itbank");
-		retVal.setUsername("iu");
-		retVal.setPassword("iu1004");
-
-		return retVal.getConnection();
+		return dataSource.getConnection();
 	}
 
 	public static DataSource getDataSource() {

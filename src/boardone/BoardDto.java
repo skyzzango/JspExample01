@@ -13,7 +13,7 @@ public class BoardDto {
 	private int step;
 	private int depth;
 	private Timestamp regdate;
-	private String contente;
+	private String content;
 	private String ip;
 
 	public BoardDto() {}
@@ -98,12 +98,12 @@ public class BoardDto {
 		this.regdate = regdate;
 	}
 
-	public String getContente() {
-		return contente;
+	public String getContent() {
+		return content;
 	}
 
-	public void setContente(String contente) {
-		this.contente = contente;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	public String getIp() {
@@ -112,5 +112,23 @@ public class BoardDto {
 
 	public void setIp(String ip) {
 		this.ip = ip;
+	}
+
+	@Override
+	public String toString() {
+		return "BoardDto{" +
+				"\nnum=" + num +
+				", \nwriter='" + writer + '\'' +
+				", \nemail='" + email + '\'' +
+				", \nsubject='" + subject + '\'' +
+				", \npassword='" + password + '\'' +
+				", \nreadcount=" + readcount +
+				", \nref=" + ref +
+				", \nstep=" + step +
+				", \ndepth=" + depth +
+				", \nregdate=" + regdate +
+				", \ncontent='" + content + '\'' +
+				", \nip='" + ip + '\'' +
+				'}';
 	}
 }

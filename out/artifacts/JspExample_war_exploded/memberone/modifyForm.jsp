@@ -1,4 +1,5 @@
-<%@ page import="memberone.MemberDto" %><%--
+<%@ page import="memberone.MemberDto" %>
+<%@ page import="memberone.MemberDao" %><%--
   Created by IntelliJ IDEA.
   User: skyzz
   Date: 2018-09-04
@@ -7,12 +8,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%@include file="../partials/loginCheck.jsp" %>
-<jsp:useBean id="dao" class="memberone.MemberDao"/>
 <html lang="ko">
 <head>
 	<%@include file="../partials/head.jsp" %>
 	<title>Modify Form</title>
 	<%
+		MemberDao dao = MemberDao.getInstance();
 		String loginId = (String) session.getAttribute("loginId");
 		MemberDto dto = dao.getMember(loginId);
 	%>

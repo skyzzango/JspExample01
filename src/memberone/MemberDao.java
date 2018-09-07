@@ -9,13 +9,22 @@ public class MemberDao {
 	private static final String ID = "iu";
 	private static final String PW = "iu1004";
 
-	static {
+	private MemberDao() {
 		try {
 			Class.forName(DRIVER);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
+
+	private static class LazyHolder {
+		static final MemberDao INSTANCE = new MemberDao();
+	}
+
+	public static MemberDao getInstance() {
+		return LazyHolder.INSTANCE;
+	}
+
 
 	private static Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(URL, ID, PW);
