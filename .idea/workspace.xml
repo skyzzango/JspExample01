@@ -6,35 +6,38 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef099c1f-7d06-4443-9d28-4229edf9d592" name="Default Changelist" comment="">
+    <list default="true" id="ef099c1f-7d06-4443-9d28-4229edf9d592" name="Default Changelist" comment="게시판 만들기 - master">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3cb9665f-0530-4180-9fba-aa220c38fe74/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3cb9665f-0530-4180-9fba-aa220c38fe74/storage_v2/_src_/schema/world.khvBBg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/classes/META-INF/JspExample.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JspExample/META-INF/JspExample.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3cb9665f-0530-4180-9fba-aa220c38fe74.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3cb9665f-0530-4180-9fba-aa220c38fe74.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JspExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JspExample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/classes/boardone/BoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/classes/boardone/BoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/classes/memberone/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/classes/memberone/MemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/deleteProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/deleteProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/idCheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/idCheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/loginProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/loginProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/modifyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/modifyForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/modifyProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/modifyProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/regProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/memberone/regProc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/lib/tomcat-dbcp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/WEB-INF/lib/tomcat-dbcp.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/content.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/content.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/deleteProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/deleteProc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/writeProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/boardone/writeProc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/lib/mysql-connector-java-8.0.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/partials/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspExample_war_exploded/partials/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JspExample/boardone/BoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspExample/boardone/BoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JspExample/memberone/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspExample/memberone/MemberDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/boardone/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardone/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boardone/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardone/BoardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boardone/ConnUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardone/ConnUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memberone/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memberone/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/boardone/writeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/boardone/writeForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/boardone/content.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/boardone/content.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/boardone/deleteProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/boardone/deleteProc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/boardone/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/boardone/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/boardone/writeProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/boardone/writeProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memberone/deleteProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memberone/deleteProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memberone/idCheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memberone/idCheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memberone/loginProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memberone/loginProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memberone/modifyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memberone/modifyForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memberone/modifyProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memberone/modifyProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memberone/regProc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memberone/regProc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/partials/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/partials/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/partials/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/partials/head.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,26 +171,42 @@
     <session id="-1300932494">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1946" />
-          <entry key="JSP" value="2994" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Git file" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="4665" />
+          <entry key="JSP" value="4271" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Properties" value="8" />
+          <entry key="RegExp" value="3" />
+          <entry key="SQL" value="17" />
+          <entry key="Scratch" value="1373" />
           <entry key="VTL" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="7" />
+          <entry key="dummy" value="8" />
           <entry key="ft" value="6" />
-          <entry key="java" value="1946" />
-          <entry key="jsp" value="2994" />
+          <entry key="gitignore" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="4667" />
+          <entry key="jsp" value="4271" />
+          <entry key="properties" value="8" />
+          <entry key="regexp" value="3" />
+          <entry key="sql" value="1388" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -195,12 +214,26 @@
       <usages-collector id="statistics.php.new.test" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="MF" value="1" />
-          <entry key="board" value="5" />
-          <entry key="java" value="7" />
+          <entry key="MF" value="3" />
+          <entry key="MemberDao" value="1" />
+          <entry key="board" value="16" />
+          <entry key="db" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="groovy" value="2" />
+          <entry key="guestbook" value="1" />
+          <entry key="html" value="1" />
+          <entry key="http" value="11" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="12" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="12" />
-          <entry key="xml" value="2" />
+          <entry key="jsp" value="20" />
+          <entry key="member" value="1" />
+          <entry key="properties" value="2" />
+          <entry key="sql" value="8" />
+          <entry key="sqlite_master" value="1" />
+          <entry key="txt" value="1" />
+          <entry key="vmoptions" value="1" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger" />
@@ -209,108 +242,42 @@
       <usages-collector id="statistics.php.rename.constructor" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="5" />
-          <entry key="JAVA" value="7" />
-          <entry key="JSP" value="12" />
+          <entry key="DBN-SQL" value="2" />
+          <entry key="Database Element" value="19" />
+          <entry key="Git file" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="HTTP Request" value="3" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="12" />
+          <entry key="JSP" value="20" />
           <entry key="JavaScript" value="2" />
-          <entry key="Manifest" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="Manifest" value="3" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Properties" value="2" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="15" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/boardone/BoardDao.java">
+        <entry file="file://$PROJECT_DIR$/JspExample.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/deleteProc.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/deleteForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/writeForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/writeProc.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/updateForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/updateProc.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/boardone/content.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="532">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -320,24 +287,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gitignore</find>
-      <find>password1</find>
-      <find>re</find>
-      <find>error_next_box</find>
-      <find>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</find>
-      <find>form.pswd1</find>
-      <find>none</find>
-      <find>ps</find>
-      <find>p</find>
-      <find>String loginId = (String) session.getAttribute(&quot;loginId&quot;);</find>
       <find>정보수정</find>
       <find>정상적</find>
       <find>SQLException</find>
@@ -355,16 +312,30 @@
       <find>jsp?</find>
       <find>?pa</find>
       <find>getString</find>
+      <find>lib</find>
+      <find>master</find>
+      <find>step</find>
+      <find>huistorage.tistory.com</find>
+      <find>심야식당</find>
+      <find>nofollow</find>
+      <find>bo3</find>
+      <find>System.out</find>
+      <find>중간</find>
+      <find>Exce</find>
+      <find>Exception</find>
+      <find>1040</find>
+      <find>%</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response1.html" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d53cd93a-53a6-4ca0-9dec-4ed108466424/console.sql" />
-        <option value="$PROJECT_DIR$/web/memberone/regForm2.jsp" />
         <option value="$PROJECT_DIR$/src/memberone/memberDto.java" />
         <option value="$PROJECT_DIR$/src/memberone/memberInsert.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fab1ba18-a209-4e1b-8c18-623076010cd0/console.sql" />
@@ -384,32 +355,38 @@
         <option value="$PROJECT_DIR$/web/memberone/modifyForm.jsp" />
         <option value="$PROJECT_DIR$/web/memberone/logoutForm.jsp" />
         <option value="$PROJECT_DIR$/src/post/PostDao.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3cb9665f-0530-4180-9fba-aa220c38fe74/console.sql" />
         <option value="$PROJECT_DIR$/src/boardone/PostDao.java" />
         <option value="$PROJECT_DIR$/web/memberone/login.jsp" />
         <option value="$PROJECT_DIR$/web/memberone/deleteForm.jsp" />
         <option value="$PROJECT_DIR$/web/memberone/regForm.jsp" />
-        <option value="$PROJECT_DIR$/web/partials/head.jsp" />
         <option value="$PROJECT_DIR$/web/boardone/script.js" />
         <option value="$PROJECT_DIR$/web/db.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/context.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/db.properties" />
-        <option value="$PROJECT_DIR$/web/.gitignore" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Learning" />
         <option value="$PROJECT_DIR$/src/memberone/MemberDao.java" />
         <option value="$PROJECT_DIR$/src/boardone/ConnUtil.java" />
         <option value="$PROJECT_DIR$/src/boardone/BoardDto.java" />
         <option value="$PROJECT_DIR$/web/partials/nav.jsp" />
-        <option value="$PROJECT_DIR$/web/boardone/content.jsp" />
-        <option value="$PROJECT_DIR$/web/boardone/list.jsp" />
         <option value="$PROJECT_DIR$/web/boardone/writeForm.jsp" />
         <option value="$PROJECT_DIR$/web/boardone/updateProc.jsp" />
-        <option value="$PROJECT_DIR$/web/boardone/deleteProc.jsp" />
-        <option value="$PROJECT_DIR$/web/boardone/writeProc.jsp" />
         <option value="$PROJECT_DIR$/web/boardone/updateForm.jsp" />
         <option value="$PROJECT_DIR$/web/boardone/deleteForm.jsp" />
+        <option value="$PROJECT_DIR$/web/boardone/deleteProc.jsp" />
+        <option value="$PROJECT_DIR$/src/memberone/JodalTime.java" />
+        <option value="$PROJECT_DIR$/db.properties" />
+        <option value="$PROJECT_DIR$/web/boardone/writeProc.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_5.http" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3cb9665f-0530-4180-9fba-aa220c38fe74/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3cb9665f-0530-4180-9fba-aa220c38fe74/console_1.sql" />
+        <option value="$PROJECT_DIR$/web/dbQuery.txt" />
+        <option value="$PROJECT_DIR$/web/partials/head.jsp" />
         <option value="$PROJECT_DIR$/src/boardone/BoardDao.java" />
+        <option value="$PROJECT_DIR$/src/rest/SendPost.java" />
+        <option value="$PROJECT_DIR$/web/boardone/list.jsp" />
+        <option value="$PROJECT_DIR$/web/boardone/content.jsp" />
+        <option value="$PROJECT_DIR$/web/.gitignore" />
+        <option value="$PROJECT_DIR$/JspExample.iml" />
       </list>
     </option>
   </component>
@@ -429,10 +406,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="633" />
-    <option name="width" value="1294" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -519,9 +497,6 @@
           </State>
           <State>
             <id>GeneralPHP</id>
-          </State>
-          <State>
-            <id>GeneralScala</id>
           </State>
           <State>
             <id>Go</id>
@@ -647,10 +622,13 @@
             <id>Quality toolsPHP</id>
           </State>
           <State>
+            <id>RegExp</id>
+          </State>
+          <State>
             <id>Resource managementJava</id>
           </State>
           <State>
-            <id>Scala</id>
+            <id>SQL</id>
           </State>
           <State>
             <id>SecurityJava</id>
@@ -686,6 +664,11 @@
             <id>XPath</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>SingleStatementInBlock</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -726,6 +709,12 @@
             <path>
               <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
               <item name="JspExample01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JspExample01" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -733,6 +722,12 @@
               <item name="JspExample01" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="boardone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JspExample01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
@@ -752,31 +747,56 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JspExample01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="JspExample01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="3cb9665f-0530-4180-9fba-aa220c38fe74" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GO_FMT" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="getArti&#9;PSI&#9;JAVA://boardone.BoardDao#getArticle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536326692479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536444597701" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last.edited.regexp" value="www.naver.com/asd/sdd" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\skyzz\IdeaProjects\JspExample01\web\WEB-INF\lib" />
       <recent name="C:\Users\skyzz\IdeaProjects\JspExample\web\WEB-INF\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -788,6 +808,100 @@
       <recent name="C:\Users\skyzz\IdeaProjects\JspExample\web" />
       <recent name="C:\Users\skyzz\IdeaProjects\JspExample\web\WEB-INF\lib" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/boardone/writeProc.jsp" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:8080" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Origin" />
+                <option name="value" value="http://localhost:8080" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Upgrade-Insecure-Requests" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="User-Agent" />
+                <option name="value" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-DevTools-Emulate-Network-Conditions-Client-Id" />
+                <option name="value" value="5F7D930307ED4619146804E4979219AC" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Referer" />
+                <option name="value" value="http://localhost:8080/boardone/writeForm.jsp" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Encoding" />
+                <option name="value" value="gzip, deflate, br" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Language" />
+                <option name="value" value="ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cookie" />
+                <option name="value" value="Idea-e738998a=28b45a12-44c3-4830-8060-cea84c1a1a5b; _ga=GA1.1.661720280.1534680697; wcs_bt=s_109665f6c18:1534681691|594e9aad5171c0:1534681691; Webstorm-a868a6e6=4c624b2d-2448-4a4d-9db8-0ad13de4731e; Idea-8125cd0d=67b52206-9135-43ce-b1cb-f7280e232016; JSESSIONID=A9571640464431F3A3CE34237127BB99" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="content=%EB%82%B4%EC%9A%A95&amp;depth=0&amp;email=email%40example.com&amp;num=0&amp;password=1234&amp;ref=1&amp;step=0&amp;subject=%EC%A0%9C%EB%AA%A95&amp;writer=example" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/resources" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="dataa" />
+                <option name="value" value="num=0&amp;ref=1&amp;step=0&amp;depth=0&amp;writer=example&amp;email=email%40example.com&amp;subject=%EC%A0%9C%EB%AA%A94&amp;content=%EB%82%B4%EC%9A%A94&amp;password=1234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -801,11 +915,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.33">
+  <component name="RunManager" selected="Application.SendPost">
+    <configuration name="SendPost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rest.SendPost" />
+      <module name="JspExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="writeForm.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/boardone/writeForm.jsp">
       <method v="2" />
     </configuration>
+    <configuration name="writeProc.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/boardone/writeProc.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 8.5.33" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.33" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="JspExample:war exploded">
@@ -879,9 +1010,13 @@
     <list>
       <item itemvalue="Tomcat Server.Tomcat 8.5.33" />
       <item itemvalue="JavaScript Debug.writeForm.jsp" />
+      <item itemvalue="Application.SendPost" />
+      <item itemvalue="JavaScript Debug.writeProc.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SendPost" />
+        <item itemvalue="JavaScript Debug.writeProc.jsp" />
         <item itemvalue="JavaScript Debug.writeForm.jsp" />
       </list>
     </recent_temporary>
@@ -903,6 +1038,9 @@
       <workItem from="1536303472975" duration="34000" />
       <workItem from="1536303533093" duration="2278000" />
       <workItem from="1536305850827" duration="19181000" />
+      <workItem from="1536335566531" duration="1625000" />
+      <workItem from="1536337228395" duration="8844000" />
+      <workItem from="1536387532854" duration="43383000" />
     </task>
     <task id="LOCAL-00001" summary="게시판 만들기 - master">
       <created>1536242529034</created>
@@ -915,13 +1053,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46529000" />
+    <option name="totallyTimeSpent" value="100381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="0" width="1294" height="1047" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17599352" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.12693334" />
+      <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.11573333" />
       <window_info id="Designer" order="2" />
       <window_info id="DB Browser" order="3" weight="0.32979593" />
       <window_info id="UI Designer" order="4" />
@@ -930,77 +1069,39 @@
       <window_info id="Image Layers" order="7" />
       <window_info id="Learn" order="8" weight="0.32927817" />
       <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" weight="0.3296582" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49837664" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32855567" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49837664" weight="0.32855567" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32962137" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32962137" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49797243" weight="0.32962137" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.38037485" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49797243" weight="0.32855567" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5020276" side_tool="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5020276" side_tool="true" weight="0.32855567" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32962137" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32962137" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.32962137" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32855567" />
       <window_info anchor="bottom" id="DB Execution Console" order="17" />
+      <window_info anchor="bottom" id="REST Client" order="18" weight="0.4332966" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" sideWeight="0.500821" side_tool="true" weight="0.20575693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2496" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Mongo Explorer" order="5" weight="0.32979593" />
-      <window_info anchor="right" id="Database" order="6" weight="0.20600162" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.49917898" visible="true" weight="0.20586666" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="SciView" order="10" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17632653" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="DB Browser" order="3" weight="0.32979593" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Image Layers" order="7" />
-      <window_info id="Learn" order="8" />
-      <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" weight="0.32962137" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32962137" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32962137" />
-      <window_info anchor="bottom" id="CheckStyle" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004082" side_tool="true" weight="0.32962137" />
-      <window_info anchor="bottom" id="Tail" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32962137" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32962137" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.32962137" />
-      <window_info anchor="bottom" id="DB Execution Console" order="17" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" weight="0.32979593" />
-      <window_info anchor="right" id="Database" order="6" weight="0.20653062" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="SciView" order="10" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1013,148 +1114,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="게시판 만들기 - master" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="25" lean-forward="true" selection-end-line="1018" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3cb9665f-0530-4180-9fba-aa220c38fe74/schema/itbank/table/member" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/naver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="290" column="21" lean-forward="true" selection-start-line="290" selection-start-column="21" selection-end-line="290" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/modifyProc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/loginCheck.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/idCheck.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/memberone/MemberDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/modifyForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/logoutForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/loginProc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3cb9665f-0530-4180-9fba-aa220c38fe74/schema/itbank/table/guestbook" />
-    <entry file="das://3cb9665f-0530-4180-9fba-aa220c38fe74/schema/itbank/table/board.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cb9665f-0530-4180-9fba-aa220c38fe74/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/deleteForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#1633#1640#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/regForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/regProc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/memberone/deleteProc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/memberone/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1162,27 +1121,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning" />
     <entry file="file://$PROJECT_DIR$/src/memberone/MemberDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1194,13 +1133,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/src/boardone/BoardDto.java" />
+    <entry file="file://$PROJECT_DIR$/web/boardone/deleteProc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/boardone/updateForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/boardone/deleteForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/boardone/updateProc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/memberone.MemberDao">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>memberone.MemberDao</OriginalElement>
+          <nodes>
+            <node x="" y="">memberone.MemberDao</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="58.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memberone/JodalTime.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Toolbox/apps/IDEA-U/ch-0/182.4129.33.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cb9665f-0530-4180-9fba-aa220c38fe74/schema/itbank/table/guestbook">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/tomcat_dbcp.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/head.jsp">
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_46.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/boardone/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boardone/ConnUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_3.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_5.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cb9665f-0530-4180-9fba-aa220c38fe74/schema/itbank/table/board.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_6.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/BiConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cb9665f-0530-4180-9fba-aa220c38fe74/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dbQuery.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1211,86 +1292,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boardone/ConnUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/partials/nav.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/partials/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="608">
           <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/content.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/deleteProc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/boardone/writeForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="257">
+          <caret line="81" column="104" lean-forward="true" selection-start-line="81" selection-start-column="104" selection-end-line="81" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/boardone/writeProc.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        <state relative-caret-position="152">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/script.js">
+    <entry file="file://$PROJECT_DIR$/src/boardone/BoardDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="97" column="15" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boardone/BoardDto.java">
+    <entry file="file://$PROJECT_DIR$/src/rest/SendPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="332">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3386#3387#0" expanded="true" />
+            <element signature="e#3430#3431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/boardone/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/boardone/content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,34 +1378,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/updateForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+    <entry file="das://7102a8da-c95d-482c-95ca-cf1f476ebfe6/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/updateProc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+    <entry file="das://7102a8da-c95d-482c-95ca-cf1f476ebfe6/schema/main/table/member">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/boardone/deleteForm.jsp">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boardone/BoardDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/JSON-Groovy.json.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itbank_board.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cb9665f-0530-4180-9fba-aa220c38fe74/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JspExample.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1363,6 +1465,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>jsoup-1.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1386,12 +1489,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JspExample</last-edited>
+          <last-edited>Web|JspExample</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

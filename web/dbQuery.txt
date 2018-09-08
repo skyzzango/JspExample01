@@ -1,0 +1,56 @@
+# MySql
+select max(num) from board;
+
+select count(*)
+as totalCount
+from board;
+
+select num, subject, content, regdate
+from board
+order by regdate
+limit 1800, 10;
+
+select @RowNum := @RowNum + 1 as rnum, num, subject, content, regdate, ref, step
+from board, (select @RowNum := 0) A
+order by ref desc, step desc
+limit 1800, 20;
+
+
+# Lee
+select *
+from (
+     select @RowNum := @RowNum + 1 as rnum, num, subject, content, regdate
+     from (
+          select * from board, (select @RowNum := 0) A
+          order by ref desc, step asc) B
+     ) C
+where rnum >= 800 and rnum <= 820;
+
+select *
+from (
+     select *
+     from (
+          select @RowNum := @RowNum + 1 as rnum, num, subject, content, regdate
+          from board, (select @RowNum := 0) A
+          order by ref desc, step asc) B
+     where rnum <= 820) C
+where C.rnum >= 800;
+
+
+# Oracle
+select rownum as rnum, A.num, A.subject, A.content, A.regdate
+from (
+     select num, subject, content, regdate
+     from board
+     order by regdate) A
+where rownum between 21 and 30;
+
+select X.rnum, X.num, X.subject, X.content, `char`(X.regdate, 'yyyy-MM-dd') as regdate
+from (
+     select rownum as rnum, A.num, A.subject, A.content, A.regdate
+     from (
+          select num, subject, content, regdate
+          from board
+          order by regdate) A
+     where rownum <= 30) X
+where X.rnum >= 21;

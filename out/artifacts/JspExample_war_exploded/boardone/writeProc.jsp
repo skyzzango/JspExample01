@@ -12,7 +12,6 @@
 	<jsp:setProperty name="article" property="*"/>
 </jsp:useBean>
 <%
-	System.out.println(request.toString());
 	article.setRegdate(new Timestamp(System.currentTimeMillis()));
 	article.setIp(request.getRemoteAddr());
 	BoardDao dbPro = BoardDao.getInstance();

@@ -40,14 +40,11 @@
 <!-- my script -->
 <script src="script.js"></script>
 
-<!-- my css -->
-<link rel="stylesheet" href="/css/master.css">
-
 <!-- Custom styles for this template -->
 <style>
 	body {
 		font-family: 'Nanum Gothic Coding', monospace;
-		padding-top: 5rem;
+		padding-top: 3rem;
 	}
 
 	.starter-template {

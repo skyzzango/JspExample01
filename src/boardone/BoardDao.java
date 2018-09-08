@@ -21,6 +21,13 @@ public class BoardDao {
 		return instance;
 	}
 
+	private PreparedStatement setPreparedStatement(Connection conn, String sql, int start, int end) throws SQLException {
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, start);
+		pstmt.setInt(2, end);
+		return pstmt;
+	}
+
 
 	private PreparedStatement setPreparedStatement(Connection conn, String sql, Object status) throws SQLException {
 		PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -90,7 +97,7 @@ public class BoardDao {
 
 	public int getArticleCount() {
 		int x = 0;
-		String sql = "select count(*) from board";
+		String sql = "select count(*) as totalCount from board";
 		try (
 				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -103,6 +110,31 @@ public class BoardDao {
 			e.printStackTrace();
 		}
 		return x;
+	}
+
+	public List<BoardDto> getArticlesPage(int start, int end) {
+		List<BoardDto> articleList = null;
+		String sql = "select num, writer, email, subject, password, regdate, readcount, ref, step, depth, content, ip " +
+				"from board " +
+				"order by ref desc, step asc " +
+				"limit ?, ?";
+
+		try (
+				Connection conn = ConnUtil.getConnection();
+				PreparedStatement pstmt = setPreparedStatement(conn, sql, start, end);
+				ResultSet rs = pstmt.executeQuery()
+		) {
+			if (rs.next()) {
+				articleList = new ArrayList<>(10);
+				do {
+					BoardDto article = createArticle(rs);
+					articleList.add(article);
+				} while (rs.next());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return articleList;
 	}
 
 	public List<BoardDto> getArticles() {
@@ -180,7 +212,7 @@ public class BoardDao {
 			if (rs.next()) {
 				String dbPass = rs.getString("password");
 				if (dbPass.equals(article.getPassword())) {
-					try(PreparedStatement pstmt1 = conn.prepareStatement(sql1)) {
+					try (PreparedStatement pstmt1 = conn.prepareStatement(sql1)) {
 						pstmt1.setString(1, article.getWriter());
 						pstmt1.setString(2, article.getEmail());
 						pstmt1.setString(3, article.getSubject());

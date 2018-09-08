@@ -68,9 +68,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td>내용</td>
-					<td colspan="2" style="min-height: 200px; text-align: left;">
-						<%= article.getContent() %>
+					<td style="width: 20%">내용</td>
+					<td colspan="2" style="height: 10rem; text-align: left;">
+						<a class="btn btn-link" href="<%= article.getContent() %>" role="button"><%= article.getSubject() %>
+						</a>
 					</td>
 				</tr>
 				</tbody>

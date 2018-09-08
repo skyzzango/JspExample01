@@ -1,0 +1,26 @@
+POST http://localhost:8080/boardone/writeProc.jsp
+Host: localhost:8080
+Origin: http://localhost:8080
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+X-DevTools-Emulate-Network-Conditions-Client-Id: 5F7D930307ED4619146804E4979219AC
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:8080/boardone/writeForm.jsp
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Idea-e738998a=28b45a12-44c3-4830-8060-cea84c1a1a5b; _ga=GA1.1.661720280.1534680697; wcs_bt=s_109665f6c18:1534681691|594e9aad5171c0:1534681691; Webstorm-a868a6e6=4c624b2d-2448-4a4d-9db8-0ad13de4731e; Idea-8125cd0d=67b52206-9135-43ce-b1cb-f7280e232016; JSESSIONID=A9571640464431F3A3CE34237127BB99
+Cache-Control: no-cache
+
+content=%EB%82%B4%EC%9A%A95&depth=0&email=email%40example.com&num=0&password=1234&ref=1&step=0&subject=%EC%A0%9C%EB%AA%A95&writer=example
+
+###
+
+POST http://localhost:8080/resources?dataa=num=0&ref=1&step=0&depth=0&writer=example&email=email%40example.com&subject=%EC%A0%9C%EB%AA%A94&content=%EB%82%B4%EC%9A%A94&password=1234
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-08T035604.404.html
+
+###
+

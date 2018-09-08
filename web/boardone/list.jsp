@@ -10,17 +10,36 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%
-	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-
-	int count = 0;
-	int number = 0;
-	List<BoardDto> articleList = null;
+	int count;
 	BoardDao dbPro = BoardDao.getInstance();
 	count = dbPro.getArticleCount(); // 전체 글 수
-	if (count > 0) {
-		articleList = dbPro.getArticles();
+	int pageSize = 20; // 한페이지에 보여지는 글 수
+	int totalPage = count / pageSize;
+	if (count % pageSize > 0) {
+		totalPage++;
 	}
-	number = count;
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+	String pageNum = request.getParameter("pageNum");
+	if (pageNum == null || pageNum.equals("0")) {
+		pageNum = "1";
+	}
+
+	int currentPage = Integer.parseInt(pageNum);
+
+	if (currentPage > totalPage) {
+		currentPage = totalPage;
+	}
+
+	int startRow = (currentPage - 1) * pageSize + 1;
+	int endRow = currentPage * pageSize;
+
+	int number;
+	List<BoardDto> articleList = null;
+	if (count > 0) {
+		articleList = dbPro.getArticlesPage(startRow, pageSize);
+	}
+	number = count - (currentPage - 1) * pageSize;
 %>
 <html lang="ko">
 <head>
@@ -30,8 +49,8 @@
 <body>
 <%@include file="../partials/nav.jsp" %>
 <div class="starter-template" style="background-size: auto">
-	<h3>게시글 목록 (전체 글: <%= count %>)</h3><br>
 
+	<h4>게시글 목록 (전체 글: <%= count %>)</h4><br>
 	<a class="btn btn-primary" href="writeForm.jsp" role="button">글쓰기</a>
 	<br><br>
 	<table class="table">
@@ -55,7 +74,16 @@
 				<%= number-- %>
 			</td>
 			<td>
-				<a class="btn btn-link" href="content.jsp?num=<%= article.getNum() %>&pageNum=1"
+				<%
+					int wid = 0;
+					if (article.getDepth() > 0) {
+						wid = 5 * (article.getDepth()); %>
+						<img src="images/level.gif" width="<%= wid %>" alt="level">
+						<img src="images/re.gif" alt="re">
+				<% } else { %>
+						<img src="images/level.gif" width="<%= wid %>" alt="level">
+				<% } %>
+				<a class="btn btn-link" href="content.jsp?num=<%= article.getNum() %>&pageNum=<%=currentPage%>"
 				   role="button"><%= article.getSubject() %>
 				</a>
 				<%
@@ -85,15 +113,27 @@
 		<tr>
 			<td>게시판에 저장된 글이 없습니다.</td>
 		</tr>
-		<% }
-		%>
+		<% } %>
 		</tbody>
 	</table>
 	<%
-		if (count == 0) {
-
-		}
-	%>
+		if (count > 0) {
+			int pageBlock = 5;
+			int imsi = count % pageSize == 0 ? 0 : 1;
+			int pageCount = count / pageSize + imsi;
+			int startPage = ((currentPage -1) / pageBlock) * pageBlock + 1;
+			int endPage = startPage + pageBlock - 1;
+			if (endPage > pageCount){ endPage = pageCount;}
+			if (startPage > pageBlock) { %>
+				<button type="button" class="btn btn-primary" onclick="location.href='list.jsp?pageNum=<%=startPage-pageBlock%>'">[이전]</button>
+			<% }
+			for (int i = startPage; i <= endPage; i++) { %>
+				<button type="button" class="btn btn-primary" onclick="location.href='list.jsp?pageNum=<%=i%>'">[<%=i%>]</button>
+			<% }
+			if (endPage < pageCount) { %>
+				<button type="button" class="btn btn-primary" onclick="location.href='list.jsp?pageNum=<%=startPage+pageBlock%>'">[다음]</button>
+			<% }
+		} %>
 </div>
 </body>
 </html>
