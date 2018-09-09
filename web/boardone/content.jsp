@@ -70,16 +70,19 @@
 				<tr>
 					<td style="width: 20%">내용</td>
 					<td colspan="2" style="height: 10rem; text-align: left;">
-						<a class="btn btn-link" href="<%= article.getContent() %>" role="button"><%= article.getSubject() %>
+						<a class="btn btn-link" href="<%= article.getContent() %>"
+						   role="button"><%= article.getSubject() %>
 						</a>
 					</td>
 				</tr>
 				</tbody>
 			</table>
 			<input class="btn btn-primary" type="button" value="수정"
-			       onclick="document.location.href='updateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+			       onclick="document.location.href='updateForm.jsp?num=<%=num%>&pageNum=<%=pageNum%>'">
 			<input class="btn btn-primary" type="button" value="삭제"
-			       onclick="document.location.href='deleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+			       onclick="document.location.href='deleteForm.jsp?num=<%=num%>&pageNum=<%=pageNum%>'">
+			<input class="btn btn-primary" type="button" value="답글"
+			       onclick="document.location.href='writeForm.jsp?num=<%=num%>&ref=<%=ref%>&step=<%=step%>&depth=<%=depth%>'">
 			<input class="btn btn-primary" type="button" value="목록"
 			       onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
 		</div>

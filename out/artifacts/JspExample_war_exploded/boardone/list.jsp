@@ -78,17 +78,17 @@
 					int wid = 0;
 					if (article.getDepth() > 0) {
 						wid = 5 * (article.getDepth()); %>
-						<img src="images/level.gif" width="<%= wid %>" alt="level">
-						<img src="images/re.gif" alt="re">
+						<img src="../images/level.gif" width="<%= wid %>" alt="level">
+						<img src="../images/re.gif" alt="re">
 				<% } else { %>
-						<img src="images/level.gif" width="<%= wid %>" alt="level">
+						<img src="../images/level.gif" width="<%= wid %>" alt="level">
 				<% } %>
 				<a class="btn btn-link" href="content.jsp?num=<%= article.getNum() %>&pageNum=<%=currentPage%>"
 				   role="button"><%= article.getSubject() %>
 				</a>
 				<%
 					if (article.getReadcount() >= 20) { %>
-				<img src="images/hot.gif" class="img-fluid" alt="hot">
+				<img src="../images/hot.gif" class="img-fluid" alt="hot">
 				<% }
 				%>
 			</td>

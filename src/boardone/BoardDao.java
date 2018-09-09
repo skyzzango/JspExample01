@@ -59,7 +59,7 @@ public class BoardDao {
 				number = 1;
 			}
 
-			if (number != 0) { // 답 글일 경우
+			if (num != 0) { // 답 글일 경우
 				sql = "update board set step = step + 1 where ref = ? and step > ?";
 				try (PreparedStatement pstmt1 = conn.prepareStatement(sql)) {
 					pstmt1.setInt(1, ref);
