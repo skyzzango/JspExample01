@@ -30,7 +30,7 @@
 	<h3>글 내용 보기</h3><br>
 	<div class="container">
 		<div class="row">
-			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd;">
+			<table class="table table-bordered">
 				<thead>
 				<tr>
 					<th colspan="2" style="background-color: #eeeeee; text-align: center;">게시판 글보기</th>
@@ -38,41 +38,39 @@
 				</thead>
 				<tbody>
 				<tr>
-					<td>번호</td>
-					<td colspan="2">
+					<td style="text-align: center;">번호</td>
+					<td>
 						<%= article.getNum() %>
 					</td>
 				</tr>
 				<tr>
-					<td>조회수</td>
-					<td colspan="2">
+					<td style="text-align: center;">조회수</td>
+					<td>
 						<%= article.getReadcount() %>
 					</td>
 				</tr>
 				<tr>
-					<td>작성자</td>
-					<td colspan="2">
+					<td style="text-align: center;">작성자</td>
+					<td>
 						<%= article.getWriter() %>
 					</td>
 				</tr>
 				<tr>
-					<td>작성일</td>
-					<td colspan="2">
+					<td style="text-align: center;">작성일</td>
+					<td>
 						<%= article.getRegdate() %>
 					</td>
 				</tr>
 				<tr>
-					<td style="width: 20%">제목</td>
-					<td colspan="2">
+					<td style="text-align: center;">제목</td>
+					<td>
 						<%= article.getSubject() %>
 					</td>
 				</tr>
 				<tr>
-					<td style="width: 20%">내용</td>
-					<td colspan="2" style="height: 10rem; text-align: left;">
-						<a class="btn btn-link" href="<%= article.getContent() %>"
-						   role="button"><%= article.getSubject() %>
-						</a>
+					<td style="text-align: center;">내용</td>
+					<td style="height: 10rem;">
+						<a class="btn btn-link" href="<%= article.getContent() %>" role="button">알라딘으로 이동!!</a>
 					</td>
 				</tr>
 				</tbody>

@@ -39,4 +39,14 @@ public class MemberDto {
 	public void setRegdate(Timestamp regdate) {
 		this.regdate = regdate;
 	}
+
+	@Override
+	public String toString() {
+		return "MemberDto{" +
+				"id='" + id + '\'' +
+				", password='" + password + '\'' +
+				", email='" + email + '\'' +
+				", regdate=" + regdate +
+				'}';
+	}
 }

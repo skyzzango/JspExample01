@@ -1,5 +1,7 @@
 package boardone;
 
+import util.ConnUtil;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +9,7 @@ import java.util.List;
 public class BoardDao {
 	private static BoardDao instance = null;
 
-	private BoardDao() {
-	}
+	private BoardDao() { }
 
 	public static BoardDao getInstance() {
 		if (instance == null) {
@@ -276,121 +277,5 @@ public class BoardDao {
 		article.setIp(rs.getString("ip"));
 
 		return article;
-	}
-
-
-	public boolean idCheck(String id) {
-		boolean result = false;
-		String sql = "select * from member where ID = ?";
-		try (
-				Connection conn = ConnUtil.getConnection();
-				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
-				ResultSet rs = pstmt.executeQuery()
-		) {
-			if (!rs.next()) {
-				result = true;
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return result;
-	}
-
-	public boolean memberInsert(BoardDto dto) {
-		boolean flag = false;
-		String sql = "insert into member values (?, ?, ?, ?)";
-		try (
-				Connection conn = ConnUtil.getConnection();
-				PreparedStatement pstmt = conn.prepareStatement(sql)
-		) {
-
-			int count = pstmt.executeUpdate();
-			if (count > 0) {
-				flag = true;
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return flag;
-	}
-
-	public int loginCheck(String id, String password) {
-		int check = -1;
-		String sql = "select password from member where id = ?";
-
-		try (
-				Connection conn = ConnUtil.getConnection();
-				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
-				ResultSet rs = pstmt.executeQuery()
-		) {
-			if (rs.next()) {
-				String dbPass = rs.getString("password");
-				check = password.equals(dbPass) ? 1 : 0;
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return check;
-	}
-
-	public BoardDto getMember(String id) {
-		BoardDto dto = new BoardDto();
-		String sql = "select * from member where id = ?";
-
-		try (
-				Connection conn = ConnUtil.getConnection();
-				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
-				ResultSet rs = pstmt.executeQuery()
-		) {
-			if (rs.next()) {
-
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return dto;
-	}
-
-	public void memberUpdate(BoardDto dto) {
-		String sql = "update member set password = ?, email = ? where id = ?";
-
-		try (
-				Connection conn = ConnUtil.getConnection();
-				PreparedStatement pstmt = conn.prepareStatement(sql)
-		) {
-
-			pstmt.executeUpdate();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	public int deleteMember(String id, String password) {
-		int result = -1;
-		String sql = "select password from member where id = ?";
-		String sql1 = "delete from member where id = ?";
-
-		try (
-				Connection conn = ConnUtil.getConnection();
-				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
-				ResultSet rs = pstmt.executeQuery()
-		) {
-			if (rs.next()) {
-				String dbPass = rs.getString("password");
-				if (dbPass.equals(password)) { // true 이면 본인 확인 성공
-//					pstmt.close();
-					try (PreparedStatement pstmt1 = conn.prepareStatement(sql1)) {
-						pstmt1.setString(1, id);
-						pstmt1.executeUpdate();
-						result = 1; // 회원 탈퇴 성공
-					}
-				} else { // 본인 확인 실패 - 비밀번호 오류
-					result = 0;
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return result;
 	}
 }

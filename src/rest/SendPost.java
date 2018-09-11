@@ -48,7 +48,7 @@ public class SendPost {
 
 	public static void aladinSerarch() {
 		// 국내 20, 외국 6, 컴퓨터 20
-		int count = 1301;
+		int count = 1;
 		for (int i = 0; i < 20; i++) {
 			String url = "http://www.aladin.co.kr/shop/common/wbest.aspx?BestType=Bestseller&BranchType=1&CID=0&page=" + i + "&cnt=1000&SortOrder=1";
 			String url1 = "http://www.aladin.co.kr/shop/common/wbest.aspx?BestType=ForeignEnglish&BranchType=7&CID=0&page=" + i + "&cnt=300&SortOrder=1";

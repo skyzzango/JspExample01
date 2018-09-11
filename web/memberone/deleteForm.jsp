@@ -16,11 +16,11 @@
 <%@include file="../partials/nav.jsp" %>
 <div class="starter-template" style="background-size: auto">
 	<h3>회원 탈퇴</h3><br>
-	<form name="myForm" action="deleteProc.jsp" method="post" style="width: 20rem" onsubmit="return checkIt()">
+	<form name="myForm" action="deleteProc.jsp" method="post" style="width: 20rem">
 		<div class="form-group">
 			<label for="password">비빌번호 입력</label>
 			<input type="password"
-			       class="form-control" name="password" id="password" placeholder="비밀번호를 입력해 주세요.">
+			       class="form-control" name="password" id="password" placeholder="비밀번호를 입력해 주세요." required>
 		</div>
 		<button type="button" onclick="window.location.href='main.jsp'" class="btn btn-info">취소</button>
 

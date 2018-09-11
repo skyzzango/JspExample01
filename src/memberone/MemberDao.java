@@ -1,21 +1,13 @@
 package memberone;
 
+import util.ConnUtil;
+
 import java.sql.*;
 import java.time.LocalDateTime;
 
 public class MemberDao {
-	private static final String DRIVER = "com.mysql.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://localhost:3306/itbank";
-	private static final String ID = "iu";
-	private static final String PW = "iu1004";
 
-	private MemberDao() {
-		try {
-			Class.forName(DRIVER);
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
+	private MemberDao() {	}
 
 	private static class LazyHolder {
 		static final MemberDao INSTANCE = new MemberDao();
@@ -23,11 +15,6 @@ public class MemberDao {
 
 	public static MemberDao getInstance() {
 		return LazyHolder.INSTANCE;
-	}
-
-
-	private static Connection getConnection() throws SQLException {
-		return DriverManager.getConnection(URL, ID, PW);
 	}
 
 	private PreparedStatement setPreparedStatement(Connection conn, String sql, String state) throws SQLException {
@@ -40,14 +27,14 @@ public class MemberDao {
 		boolean result = false;
 		String sql = "select * from member where ID = ?";
 		try (
-				Connection conn = getConnection();
+				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
 				ResultSet rs = pstmt.executeQuery()
 		) {
 			if (!rs.next()) {
 				result = true;
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return result;
@@ -57,7 +44,7 @@ public class MemberDao {
 		boolean flag = false;
 		String sql = "insert into member values (?, ?, ?, ?)";
 		try (
-				Connection conn = getConnection();
+				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = conn.prepareStatement(sql)
 		) {
 			pstmt.setString(1, dto.getId());
@@ -68,7 +55,7 @@ public class MemberDao {
 			if (count > 0) {
 				flag = true;
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return flag;
@@ -79,7 +66,7 @@ public class MemberDao {
 		String sql = "select password from member where id = ?";
 
 		try (
-				Connection conn = getConnection();
+				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
 				ResultSet rs = pstmt.executeQuery()
 		) {
@@ -87,7 +74,7 @@ public class MemberDao {
 				String dbPass = rs.getString("password");
 				check = password.equals(dbPass) ? 1 : 0;
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return check;
@@ -98,7 +85,7 @@ public class MemberDao {
 		String sql = "select * from member where id = ?";
 
 		try (
-				Connection conn = getConnection();
+				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
 				ResultSet rs = pstmt.executeQuery()
 		) {
@@ -108,7 +95,7 @@ public class MemberDao {
 				dto.setEmail(rs.getString("email"));
 				dto.setRegdate(rs.getTimestamp("regdate"));
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return dto;
@@ -118,14 +105,14 @@ public class MemberDao {
 		String sql = "update member set password = ?, email = ? where id = ?";
 
 		try (
-				Connection conn = getConnection();
+				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = conn.prepareStatement(sql)
 		) {
 			pstmt.setString(1, dto.getPassword());
 			pstmt.setString(2, dto.getEmail());
 			pstmt.setString(3, dto.getId());
 			pstmt.executeUpdate();
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -136,7 +123,7 @@ public class MemberDao {
 		String sql1 = "delete from member where id = ?";
 
 		try (
-				Connection conn = getConnection();
+				Connection conn = ConnUtil.getConnection();
 				PreparedStatement pstmt = setPreparedStatement(conn, sql, id);
 				ResultSet rs = pstmt.executeQuery()
 		) {
@@ -153,7 +140,7 @@ public class MemberDao {
 					result = 0;
 				}
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return result;

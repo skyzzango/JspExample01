@@ -14,6 +14,7 @@
 
 	if (check == 1) { // 로그인 성공
 		session.setAttribute("loginId", id);
+
 		System.out.println("session in loginId: " + session.getAttribute("loginId"));
 		response.sendRedirect("main.jsp");
 	} else if (check == 0) { // 비밀번호 오류

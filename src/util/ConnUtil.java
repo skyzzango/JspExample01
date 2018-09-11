@@ -1,28 +1,20 @@
-package boardone;
+package util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.Properties;
 
-import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
 
-class ConnUtil {
-	static Connection getConnection() throws Exception {
+public class ConnUtil {
+	public static Connection getConnection() throws Exception {
 		DataSource dataSource = (DataSource) new InitialContext()
 				.lookup("java:comp/env/jdbc/mySql");
-
-//		Context initContext = new InitialContext();
-//		Context envContext = (Context) initContext.lookup("java:comp/env");
-//		DataSource dataSource1 = (DataSource) envContext.lookup("jdbc/mySql");
-//
-//		DataSource dataSource2 = getDataSource();
-
 		return dataSource.getConnection();
 	}
 
