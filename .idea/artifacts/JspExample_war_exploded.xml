@@ -12,6 +12,7 @@
           <element id="library" level="project" name="mysql-connector-java-5.1.46" />
           <element id="library" level="application" name="jsoup-1.11" />
           <element id="library" level="project" name="jsoup-1.11.3" />
+          <element id="library" level="project" name="cos" />
         </element>
       </element>
     </root>
